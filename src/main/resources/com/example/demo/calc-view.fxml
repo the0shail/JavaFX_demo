@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="507.0" style="-fx-background-color: linear-gradient(#9dd2ea, #8bceec);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SceneController">
+   <bottom>
+      <GridPane hgap="10.0" prefHeight="338.0" prefWidth="467.0" vgap="10.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="button1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: WHITE;" text="1" textFill="#888888">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="button2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: WHITE;" text="2" textFill="#888888" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="button3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefWidth="110.0" style="-fx-background-color: WHITE;" text="3" textFill="#888888" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonClear" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #ff9fa8;" text="C" textFill="WHITE" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="button4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: WHITE;" text="4" textFill="#888888" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="button5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: WHITE;" text="5" textFill="#888888" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="button6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: WHITE;" text="6" textFill="#888888" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonResult" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #f1ff92;" text="=" textFill="#888888" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="button7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: WHITE;" text="7" textFill="#888888" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="button8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: WHITE;" text="8" textFill="#888888" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="button9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: WHITE;" text="9" textFill="#888888" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="buttonDot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: WHITE;" text="+" textFill="#888888" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </GridPane>
+   </bottom>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <right>
+      <TextField fx:id="inputResult" alignment="CENTER_RIGHT" prefHeight="75.0" prefWidth="540.0" promptText="0" style="-fx-background-color: rgba(0, 0, 0, 0.2); -fx-color: #fff;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </TextField>
+   </right>
+   <top>
+      <Button fx:id="location" mnemonicParsing="false" onAction="#homeView" style="-fx-background-color: fff; -fx-border-radius: 0;" text="На главную" BorderPane.alignment="TOP_RIGHT">
+         <BorderPane.margin>
+            <Insets right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Button>
+   </top>
+</BorderPane>

@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.demo.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-  </padding>
-
-  <Label fx:id="welcomeText" text="Hello world">
-      <font>
-         <Font name="System Bold" size="24.0" />
-      </font></Label>
-   <TextField text="Name" />
-   <TextField text="Surname" />
-   <TextField text="Phone" />
-   <CheckBox alignment="TOP_RIGHT" mnemonicParsing="false" text="private" />
-  <Button contentDisplay="RIGHT" onAction="#onHelloButtonClick" text="Hello!">
-      <cursor>
-         <Cursor fx:constant="DEFAULT" />
-      </cursor></Button>
-</VBox>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SceneController">
+   <children>
+      <Label layoutX="97.0" layoutY="89.0" text="Главная страница">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Pane layoutX="29.0" layoutY="175.0" prefHeight="300.0" prefWidth="450.0" style="-fx-background-color: fff;">
+         <children>
+            <Label layoutX="18.0" layoutY="12.0" text="Перейти на:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="href1" layoutX="18.0" layoutY="39.0" onAction="#calcView" text="Calculator" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
